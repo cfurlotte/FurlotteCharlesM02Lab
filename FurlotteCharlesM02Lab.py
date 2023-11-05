@@ -19,8 +19,11 @@ while lastName != sentinel:
     firstName = input(f'Enter the students first name:\n')
     #gets the students gpa
     gpa = float(input(f'What is the students GPA: \n'))
+    #Prints message if student is on the deans list
     if gpa >= 3.5:
         print(f'{firstName} {lastName} has made the Dean\'s List.')
+    #Prints message is student is on the honor role
     if gpa >= 3.25:
         print(f'{firstName} {lastName} has made the Honor Roll.')
+    #Starts loops again or exits
     lastName = input(f'Enter a new students last name or enter {sentinel} to quit:\n')
